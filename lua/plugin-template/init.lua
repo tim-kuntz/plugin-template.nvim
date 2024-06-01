@@ -3,20 +3,18 @@
 -- clear the cache with the following command
 -- `:lua package.loaded['plugin-template'] = nil`
 
-print("plugin-template: lua/plugin-template/init.lua")
+print "plugin-template: lua/plugin-template/init.lua"
 
 -- create a module
 local M = {}
 
 -- private by convention
-M._greetings = {}
-
-local greeting = function()
+M._greeting = function()
   return "Hello from plugin-template!!!"
 end
 
 M.hello = function()
-  print(greeting())
+  print(M._greeting())
 end
 
 return M
