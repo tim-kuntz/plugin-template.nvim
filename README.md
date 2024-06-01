@@ -13,7 +13,7 @@ Template for Neovim plugins covering the following aspects:
 Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
-use {
+return {
   'tim-kuntz/plugin-template.nvim',
 }
 ```
@@ -26,7 +26,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 * Add the following to your lazy.nvim configuration:
 
 ```lua
-use {
+return {
   'tim-kuntz/plugin-template.nvim',
   dev = true,
   enabled = true, -- false to disable plugin
